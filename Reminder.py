@@ -8,12 +8,16 @@
 ask the user if he/she has used the contact lenses and then will remind them to throw it out when needed to"""
 
 
-def contact_lenses(x):
+y = 31
 
-    y = 1
-    x = int(input("Worn:? "))
-    if x == "yes":
-        y -= 1
+x = input("Worn:? ")
+if x == "yes":
+    y -= 1
+    print("You can wear your lenses for %d more days." % y)
+
+else:
+    print("Alright, you still have %s days left then. Have fun and see better" % y)
+
 
 
 
